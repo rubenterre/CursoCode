@@ -1,0 +1,114 @@
+/* Reset CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Estilos Flex */
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    background-color: gray;
+    color:white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+main{
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.siderbar{
+    flex-grow: 1;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    margin: 0 10px;
+    align-items: center;
+}
+
+
+.contido{
+    flex-grow: 2;
+    padding: 20px;
+    background-color: wheat;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+img{
+    width: 30px;
+}
+
+footer{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+}

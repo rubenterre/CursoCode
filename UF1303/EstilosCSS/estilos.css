@@ -1,0 +1,258 @@
+/* Reset CSS */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Estilos xerais */
+
+@font-face {
+    font-family: "Katibeh";
+    src: url(assets/fonts/Katibeh-Regular.ttf);
+  }
+
+:root{
+    --color-principal: #ebffb7;
+    --fuente-principal: "Katibeh";
+}
+
+
+main {
+  /* background-color: gray; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eeeede;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23a9a9a2' fill-opacity='0.4' fill-rule='nonzero'%3E%3Cpath d='M29 58.58l7.38-7.39A30.95 30.95 0 0 1 29 37.84a30.95 30.95 0 0 1-7.38 13.36l7.37 7.38zm1.4 1.41l.01.01h-2.84l-7.37-7.38A30.95 30.95 0 0 1 6.84 60H0v-1.02a28.9 28.9 0 0 0 18.79-7.78L0 32.41v-4.84L18.78 8.79A28.9 28.9 0 0 0 0 1.02V0h6.84a30.95 30.95 0 0 1 13.35 7.38L27.57 0h2.84l7.39 7.38A30.95 30.95 0 0 1 51.16 0H60v27.58-.01V60h-8.84a30.95 30.95 0 0 1-13.37-7.4L30.4 60zM29 1.41l-7.4 7.38A30.95 30.95 0 0 1 29 22.16 30.95 30.95 0 0 1 36.38 8.8L29 1.4zM58 1A28.9 28.9 0 0 0 39.2 8.8L58 27.58V1.02zm-20.2 9.2A28.9 28.9 0 0 0 30.02 29h26.56L37.8 10.21zM30.02 31a28.9 28.9 0 0 0 7.77 18.79l18.79-18.79H30.02zm9.18 20.2A28.9 28.9 0 0 0 58 59V32.4L39.2 51.19zm-19-1.4a28.9 28.9 0 0 0 7.78-18.8H1.41l18.8 18.8zm7.78-20.8A28.9 28.9 0 0 0 20.2 10.2L1.41 29h26.57z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.div {
+  border-radius: 40px;
+  background: var(--color-principal);
+  width: 312px;
+  height: 442px;
+  flex-shrink: 0;
+  background-image: url(assets/forma.svg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.div__img {
+  display: block;
+  margin: 0 auto;
+  width: 123px;
+  height: 185px;
+  flex-shrink: 0;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.div > h1 {
+  text-align: center;
+  color: #52501b;
+  font-family: var(--fuente-principal);
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.div > p {
+  text-align: center;
+  color: #000;
+  font-family: var(--fuente-principal);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.div__button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 215px;
+  height: 43px;
+  flex-shrink: 0;
+  background: #dedc0a;
+  border: 4px solid #52501b;
+  border-radius: 10px;
+}
+
+.div__button > a {
+  color: #52501b;
+  font-family: var(--fuente-principal);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.div__button:hover {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* Detrás */
+/* 
+.div__detras{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+} */
+
+.div__detras > h1{
+ margin-top: 100px;
+}
+
+.div__detras > p{
+    margin-bottom: 20px;
+}
+
+.div__button--volver{
+    display: block;
+    margin: 0 auto;
+    width: 215px;
+    height: 43px;
+    flex-shrink: 0;
+    background: #ededc6;
+    border: 4px solid #52501b;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.div__button--volver > a{
+    color: #52501b;
+    font-family: var(--fuente-principal);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}

@@ -1,0 +1,209 @@
+/* Reset CSS /*
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Estilos xerais */
+
+header{
+    background-color: blue;
+    margin: 20px;
+    padding: 20px;
+}
+
+header > h1{
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.nav__li > a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+#noticias-destacadas{
+    background-color: brown;
+    margin: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+#noticias-destacadas > h2{
+    text-align: center;
+    color: white;
+}
+
+#artigos-recentes{
+    background-color: chartreuse;
+    margin: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+#artigos-recentes > h2{
+    text-align: center;
+    color: black;
+}
+
+footer{
+    background-color: chocolate;
+    margin: 20px;
+    padding: 20px;
+}
+
+footer > h1{
+    text-align: center;
+    color: white;
+}
+
+/* Media queries */
+
+@media screen and (min-width:768px){
+    header{
+        background-color: red;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    header > h1{
+        text-align: center;
+        color: white;
+        font-size: 2em;
+    }
+
+    main{
+        display: block;
+    }
+
+    #noticias-destacadas{
+        background-color: brown;
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    
+    #noticias-destacadas > h2{
+        text-align: center;
+        color: white;
+    }
+    
+    #artigos-recentes{
+        background-color: chartreuse;
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    
+    #artigos-recentes > h2{
+        text-align: center;
+        color: black;
+    }
+}
+
+@media screen and (max-width:480px){
+    header{
+        background-color: purple;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    header > h1{
+        text-align: center;
+        color: white;
+        font-size: 0.5em;
+    }
+
+    nav > ul{
+        list-style-type: none;
+        display: block;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    main{
+        display: block;
+    }
+
+    #noticias-destacadas{
+        background-color: brown;
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    
+    #noticias-destacadas > h2{
+        text-align: center;
+        color: white;
+    }
+    
+    #artigos-recentes{
+        background-color: chartreuse;
+        margin: 20px;
+        padding: 20px;
+        
+    }
+    
+    #artigos-recentes > h2{
+        text-align: center;
+        color: black;
+    }
+}
