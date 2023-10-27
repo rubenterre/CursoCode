@@ -1,0 +1,106 @@
+/* Estilos xerais */
+
+/* body{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "header header"
+                          "main aside"
+                          "footer footer" ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 1fr 50px;
+}
+
+header{
+    background: red ;
+    grid-area: header;
+}
+
+main{
+    background: blue;
+    grid-area: main;
+}
+
+aside{
+    background: green ;
+    grid-area: aside;
+}
+
+footer{
+    background: pink;
+    grid-area: footer;
+} */
+/* 
+body{
+    background-color: beige;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 75px;
+    background-color: green;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 80vh;
+    background-color: brown;
+
+}
+
+aside{
+    background-color: pink;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px;
+    background-color: blue;
+} */
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    background: red ;
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: blue;
+    height: 100%;
+}
+
+.contido{
+    padding: 20px;
+    color: white;
+}
+
+aside{
+    padding: 20px;
+    background: green ;
+}
+
+footer{
+    display: flex;
+    background: pink;
+}
+
+@media screen and (max-width: 480px){
+    main{
+        display: flex;
+        flex-direction: column;
+        background-color: brown;
+    }
+
+
+    
+}

@@ -1,0 +1,152 @@
+
+
+body{
+    min-height: 100vh;
+    background-color: #11131e;
+}
+
+/* Estilos tarxeta animada */
+
+/* #productos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+} */
+
+/* .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    transition: .5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
+} */
+
+.header__ul{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.header__a{
+    display: flex;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header__a:hover{
+    display: flex;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #987341;
+    font-weight: 700;
+
+}
+
+
+#productos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
+    margin: 10px;
+    width: 250px;
+    transition: border 1s ease;
+}
+
+.card:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: aliceblue;
+    border-radius: 20px;
+    border: 6px solid orange;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
+    margin: 10px;
+    width: 250px;
+    transition: border 1s ease;
+}
+
+.card__contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__img{
+    width: 100px;
+    padding-top: 10px;
+    transition: width 1s ease-out;
+}
+
+.card__img:hover{
+    width: 120px;
+    padding-top: 10px;
+    transition: width 1s ease-out;
+}
+
+.card__h2{
+    color: #11131e;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card__p{
+    color: #282626;
+    padding: 10px;
+    text-align: center;
+}
+
+.card__boton{
+    color: orange;
+    background-color: #987341;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 120px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card__boton:hover{
+    color: white;
+    background-color: orange;
+    text-align: center;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+.footer{
+    margin: 20px 0px;
+}
+
+.footer__p{
+    text-align: center;
+    font-weight: 600;
+}
