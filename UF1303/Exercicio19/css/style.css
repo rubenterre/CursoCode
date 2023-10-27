@@ -1,35 +1,172 @@
+/* Reset CSS PRO de Eduardo Fierro */
 
+@charset "UTF-8";
+/*
 
-body{
-    min-height: 100vh;
-    background-color: #11131e;
+  Con este reset vamos a resolver:
+    👉 Unificar el uso de Custom Properties
+    👉 Problemas de box-model más generales
+    👉 Problemas con imagenes, vídeos e iconos svg
+    👉 Problemas con tipografías y etiquetas input en formularios
+    👉 Unificar la tipografía de todas las etiquetas de una web
+
+*/
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+  --marron: #987341;
+  --laranxa:orange;
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #615c5c;
+  }
+}
+/* Opcional */
+/* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* Opcional */
+/* Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+/* Reseteamos los margin y paddings de todas las etiquetas */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* opcional */
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* opcional */
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+  display: inline;
+  width: initial;
+} */
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  /* opcional */
+  line-height: 1.4em;
+  /* opcional */
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--negro);
+
 }
 
 /* Estilos tarxeta animada */
-
-/* #productos{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 100px 50px;
-    padding: 100px 50px;
-} */
-
-/* .card{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 350px;
-    max-width: 100%;
-    height: 300px;
-    background-color: white;
-    border-radius: 20px;
-    transition: .5s;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
-} */
 
 .header__ul{
     display: flex;
@@ -42,14 +179,19 @@ body{
     padding: 10px;
     text-transform: uppercase;
     font-weight: 700;
+    color: white;
+    text-decoration: underline wavy var(--laranxa);
+    transition: text-decoration .5s ease-in-out;
 }
 
 .header__a:hover{
     display: flex;
     padding: 10px;
     text-transform: uppercase;
-    color: #987341;
+    color: var(--laranxa);
     font-weight: 700;
+    text-decoration: underline wavy white;
+    transition: text-decoration .5s ease-in-out;
 
 }
 
@@ -66,12 +208,13 @@ body{
     align-items: center;
     flex-direction: column;
     background-color: aliceblue;
-    border: 2px solid black;
+    border: 6px solid var(--marron);
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
     margin: 10px;
     width: 250px;
-    transition: border 1s ease;
+    transition: background-color 1s ease .5s;
+    box-sizing: border-box;
 }
 
 .card:hover{
@@ -79,13 +222,14 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aliceblue;
+    background-color: var(--laranxa);
     border-radius: 20px;
     border: 6px solid orange;
     box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
     margin: 10px;
     width: 250px;
-    transition: border 1s ease;
+    transition: background-color 1s ease-out .5s;
+    box-sizing: border-box;
 }
 
 .card__contenido{
@@ -101,10 +245,10 @@ body{
     transition: width 1s ease-out;
 }
 
-.card__img:hover{
+ .card__img:hover{
     width: 120px;
     padding-top: 10px;
-    transition: width 1s ease-out;
+    transition: width 1s ease;
 }
 
 .card__h2{
@@ -121,24 +265,24 @@ body{
 }
 
 .card__boton{
-    color: orange;
+    color: white;
     background-color: #987341;
     text-align: center;
     font-weight: 700;
     border-radius: 10px;
-    width: 120px;
-    padding: 10px 0px;
+    border: 6px solid var(--marron);
+    width: 150px;
+    padding: 5px 0px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
 .card__boton:hover{
-    color: white;
-    background-color: orange;
+    color: var(--marron);
+    background-color: white;
     text-align: center;
     font-weight: 700;
     border-radius: 10px;
-    padding: 10px 0px;
     text-transform: uppercase;
 }
 
