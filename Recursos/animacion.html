@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+
+<style>
+    main{
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .circulo{
+        background-color: aquamarine;
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        animation: movemento 2s linear infinite normal;
+    }
+
+    @keyframes movemento {
+        0%{
+            left: 0;
+            opacity: 1;
+        }
+
+        50%{
+            left: 100%;
+            opacity: 0;
+        }
+
+        100%{
+            left: 0;
+            opacity: 1;
+            background-color: brown;
+        }
+    }
+
+
+
+</style>
+</head>
+<body>
+    <main>
+        <div class="circulo"></div>
+    </main>
+</body>
+</html>

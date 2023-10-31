@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transicion en CSS</title>
+    <style>
+        main{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: antiquewhite;
+        }
+
+        .boton{
+            background-color: brown;
+            color: white;
+            padding: 0px 30px;
+            border-radius: 10px;
+            transition: all .3s ease-in-out;
+        }
+
+        .boton:hover{
+            background-color: white;
+            color: brown;
+            padding: 0px 30px;
+            border-radius: 10px;
+            font-size: 1.5rem;
+        }
+
+        .boton2{
+            padding: 10px 30px;
+            border: 1px solid black;
+            background-color: aquamarine;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            transition: all .5s ease-in-out;
+        }
+
+        .boton2:hover{
+            padding: 10px 30px;
+            border: 1px solid black;
+            background-color: blueviolet;
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    
+    </style>
+</head>
+<body>
+    <main>
+        <button class="boton">
+            <p class="boton__texto">BOTON</p>
+        </button>
+
+        <a class="boton2" href="#">
+            BOTON 2 
+        </a>
+    </main>
+</body>
+</html>

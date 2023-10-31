@@ -163,136 +163,39 @@ body {
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--negro);
-
+  background-image: url(assets/Samain.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* Estilos tarxeta animada */
+/* Estilos das animacións en CSS */
 
-.header__ul{
+main{
     display: flex;
-    padding: 20px;
-    justify-content: center;
-}
-
-.header__a{
-    display: flex;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-    transition: text-decoration .5s ease-in-out;
-}
-
-.header__a:hover{
-    display: flex;
-    padding: 10px;
-    text-transform: uppercase;
-    color: var(--laranxa);
-    font-weight: 700;
-    text-decoration: underline wavy white;
-    transition: text-decoration .5s ease-in-out;
-
-}
-
-
-#productos{
-    display: flex;
-    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
+    height: 100vh;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: aliceblue;
-    border: 6px solid var(--marron);
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
-    margin: 10px;
-    width: 250px;
-    transition: background-color 1s ease .5s;
-    box-sizing: border-box;
+.caja {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: desplazamiento 4s infinite ease-in-out;
 }
 
-.card:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--laranxa);
-    border-radius: 20px;
-    border: 6px solid orange;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
-    margin: 10px;
-    width: 250px;
-    transition: background-color 1s ease-out .5s;
-    box-sizing: border-box;
+.caja > img{
+  filter: drop-shadow(5px 5px 15px black);
 }
 
-.card__contenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card__img{
-    width: 100px;
-    padding-top: 10px;
-    transition: width 1s ease-out;
-}
-
- .card__img:hover{
-    width: 120px;
-    padding-top: 10px;
-    transition: width 1s ease;
-}
-
-.card__h2{
-    color: #11131e;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.card__p{
-    color: #282626;
-    padding: 10px;
-    text-align: center;
-}
-
-.card__boton{
-    color: white;
-    background-color: #987341;
-    text-align: center;
-    font-weight: 700;
-    border-radius: 10px;
-    border: 6px solid var(--marron);
-    width: 150px;
-    padding: 5px 0px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    transition: all 1s ease-in-out;
-}
-
-.card__boton:hover{
-    color: var(--marron);
-    background-color: white;
-    text-align: center;
-    font-weight: 700;
-    border-radius: 10px;
-    text-transform: uppercase;
-    transition: all 1s ease-in-out;
-}
-
-.footer{
-    margin: 20px 0px;
-}
-
-.footer__p{
-    text-align: center;
-    font-weight: 600;
+@keyframes desplazamiento {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
 }

@@ -166,133 +166,120 @@ body {
 
 }
 
-/* Estilos tarxeta animada */
+/* Estilos dos botóns */
 
-.header__ul{
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-}
-
-.header__a{
-    display: flex;
-    padding: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: white;
-    text-decoration: none;
-    transition: text-decoration .5s ease-in-out;
-}
-
-.header__a:hover{
-    display: flex;
-    padding: 10px;
-    text-transform: uppercase;
-    color: var(--laranxa);
-    font-weight: 700;
-    text-decoration: underline wavy white;
-    transition: text-decoration .5s ease-in-out;
-
-}
-
-
-#productos{
+.contenedor{
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
+    height: 100vh;
 }
 
-.card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: aliceblue;
-    border: 6px solid var(--marron);
-    border-radius: 20px;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
-    margin: 10px;
-    width: 250px;
-    transition: background-color 1s ease .5s;
-    box-sizing: border-box;
-}
-
-.card:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: var(--laranxa);
-    border-radius: 20px;
-    border: 6px solid orange;
-    box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
-    margin: 10px;
-    width: 250px;
-    transition: background-color 1s ease-out .5s;
-    box-sizing: border-box;
-}
-
-.card__contenido{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.card__img{
-    width: 100px;
-    padding-top: 10px;
-    transition: width 1s ease-out;
-}
-
- .card__img:hover{
-    width: 120px;
-    padding-top: 10px;
-    transition: width 1s ease;
-}
-
-.card__h2{
-    color: #11131e;
-    text-align: center;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.card__p{
-    color: #282626;
-    padding: 10px;
-    text-align: center;
-}
-
-.card__boton{
+.boton1{
+    background-color: #2fa933;
+    border: none;
     color: white;
-    background-color: #987341;
+    padding: 15px 32px;
     text-align: center;
-    font-weight: 700;
-    border-radius: 10px;
-    border: 6px solid var(--marron);
-    width: 150px;
-    padding: 5px 0px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    transition: all 1s ease-in-out;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
-.card__boton:hover{
-    color: var(--marron);
-    background-color: white;
+.boton1:hover{
+    background-color: #7d1137;
+    border: none;
+    color: white;
+    padding: 15px 32px;
     text-align: center;
-    font-weight: 700;
-    border-radius: 10px;
-    text-transform: uppercase;
-    transition: all 1s ease-in-out;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
 }
 
-.footer{
-    margin: 20px 0px;
+.boton2{
+  background-color: #a9352f;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.3s ease;
 }
 
-.footer__p{
-    text-align: center;
-    font-weight: 600;
+.boton2:hover{
+  background-color: #114e7d;
+  border: none;
+  color: yellow;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.3s ease;
+}
+
+.boton3{
+  background-color: #2f33a9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: border-radius 0.3s ease;
+}
+
+.boton3:hover{
+  background-color: #d91459;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: border-radius 0.3s ease;
+}
+
+.boton4{
+  background-color: #2f76a9;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.boton4:hover{
+  background-color: #7d6911;
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 4px 0px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
 }
