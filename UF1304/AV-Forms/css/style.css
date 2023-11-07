@@ -1,0 +1,161 @@
+/* Estilos xerais */
+
+/* Fontes */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+:root{
+    --color-fondo:#F4F7F7;
+    --color-principal:#202020;
+    --color-secundario:#009580;
+    --color-terciario: #84818A;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--color-fondo);
+    font-family: var(--fonte-principal);
+    font-size: 14px;
+}
+
+/* Header */
+
+.header{
+    padding: 2rem;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__boton{
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-principal);
+    text-decoration: none;
+    padding: 0px 20px;
+}
+
+.header__boton--signin{
+    background: white;
+    border: 1px solid #ECEAEE;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Main */
+
+
+.trial{
+    padding: 2rem;
+}
+
+.trial__h1{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--color-principal);
+}
+
+.trial__p{
+    color: var(--color-terciario);
+    font-size: 1rem;
+}
+
+/* Cards */
+
+.card{
+    border-radius: 0px;
+    border: 0px;
+    background-color: var(--color-fondo);
+    padding: 0.5rem;
+}
+
+.card__h3{
+    font-size: 1rem;
+    color: var(--color-principal);
+}
+
+.card__p{
+    color: var(--color-terciario);
+    font-size: .8rem;
+}
+
+/* Trial telefono */
+
+.trial__pregunta{
+    padding-bottom: 0px;
+    margin-bottom: .3rem;
+}
+
+.trial__telefono{
+
+    color: var(--color-principal);
+    font-weight: 600;
+}
+
+.trial__tel{
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+/* Formulario */
+
+.formulario{
+    background: #FBFCFC;
+    border-radius: 32px;
+    padding: 2rem;
+}
+
+.formulario:hover{
+    background: #FBFCFC;
+    border-radius: 32px;
+    padding: 2rem;
+    transition: all 1s linear;
+    box-shadow: 5px 5px 5px 5px rgb(234, 229, 229);
+}
+
+.formulario__a--signin{
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+.formulario__submit{
+    width: 100%;
+    background-color: var(--color-secundario);
+}
+
+.formulario__submit:hover{
+    width: 100%;
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+    border: 1px solid var(--color-secundario);
+}
+
+.formulario__chequeo{
+    color: var(--color-terciario);
+    font-size: 0.8rem;
+
+}
+
+.formulario__checkinput:valid{
+    background-color: var(--color-secundario);
+}
+
+.formulario__textcheck{
+    color: var(--color-secundario);
+}
+
+/* Aviso legal */
+
+.legal__p{
+    font-size: 0.6rem;
+    margin: 0px;
+    color: var(--color-terciario);
+}

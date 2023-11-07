@@ -193,7 +193,9 @@ main{
         left: 0;
     }
     50% {
-        left: 100%;
+        left: 90%;
+        width: 400px;
+        height: 400px;
     }
     100% {
         left: 0;

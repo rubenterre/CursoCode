@@ -208,7 +208,7 @@ main{
 #productos{
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
-    grid-gap: 10px;
+    grid-gap: 20px;
 }
 
 .card{
@@ -217,13 +217,13 @@ main{
     align-items: center;
     flex-direction: column;
     background-color: aliceblue;
-    border: 6px solid var(--marron);
+    outline: 6px solid var(--marron);
     border-radius: 20px;
     box-shadow: 0 35px 80px rgba(0, 0, 0, .15);
-
     width: 250px;
     transition: background-color 1s ease .5s;
     box-sizing: border-box;
+
 }
 
 .card__img{

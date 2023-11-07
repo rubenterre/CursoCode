@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de rexistro</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__img">
+                <img class="header__logo" src="assets/Cuboid_logo.png" alt="Este é o logo de Cuboid">
+            </div>
+            <div class="header__botones">
+                    
+                      <a href="#" class="header__boton">Log in</a>  
+                    
+                      <a href="#" class="header__boton--signin">Sign in</a>  
+                    
+                </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-6 trial">
+                <div class="trial__titulares">
+                    <h1 class="trial__h1">Get Your FREE 
+                        30-Days Trial Now!</h1>
+                    <p class="trial__p">Experience why over 2 million customers choose
+                        Cuboid POS</p>
+                </div>
+                <div class="trial__cards row">
+
+                    <div class="card col-6">
+                        <div class="card__img">
+                            <img src="assets/monetization_on_black_24dp.png" alt="Icona de moeda">
+                        </div>
+                        <div class="card__descripcion">
+                            <h3 class="card__h3">Absolutely FREE</h3>
+                            <p class="card__p">Enjoy the Free Trial with your company data</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-6">
+                        <div class="card__img">
+                            <img src="assets/dynamic_form_black_24dp.png" alt="Icona de discos duros e raio">
+                        </div>
+                        <div class="card__descripcion">
+                            <h3 class="card__h3">Fast & Easy</h3>
+                            <p class="card__p">Get access instantly, no downloads required</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-6">
+                        <div class="card__img">
+                            <img src="assets/ic_assignment_ind.png" alt="Icona de persoa en tarxeta">
+                        </div>
+                        <div class="card__descripcion">
+                            <h3 class="card__h3">Your Own Data</h3>
+                            <p class="card__p">Enjoy the Free Trial with your company data</p>
+                        </div>
+                    </div>
+
+                    <div class="card col-6">
+                        <div class="card__img">
+                            <img src="assets/ic_stars.png" alt="Icona de estrela">
+                        </div>
+                        <div class="card__descripcion">
+                            <h3 class="card__h3">Unlimited Features</h3>
+                            <p class="card__p">Access all features of the world's #1 POS software!</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="trial__contacto">
+                    <p class="trial__pregunta">Do you prefer talking to a representative?</p>
+                    <p class="trial__telefono">Call us at <span class="trial__span"><a class="trial__tel" href="tel:+8001301448">800 1301 448</a></span> </p>
+                </div>
+              </div>
+              <div class="col-md-6 formulario">
+                    <div class="formulario__titular">
+                        <h3 class="formulario__h3">Sign up now to start your free trial.</h3>
+                        <p class="formulario__p">Already have an account?<span><a class="formulario__a--signin" href="#">Sign in</a></span></p>
+                    </div>
+                    <form action="js/mail.js" method="post" class="row g-3">
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" id="inputLastname" placeholder="Last Name">
+                        </div>
+                        <div class="col-md-6">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <select id="inputJob" class="form-select">
+                              <option selected>Job title</option>
+                              <option value="freelancer">Freelancer</option>
+                              <option value="working">Working for others</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                          <input type="text" class="form-control" id="inputCompany" placeholder="Company">
+                        </div>
+                        <div class="col-12">
+    
+                            <select id="inputEmployees" class="form-select">
+                              <option selected>Employees</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                            </select>
+                          </div>
+                        <div class="col-md-6">
+                          <input type="tel" class="form-control" id="inputTel" placeholder="Mobile">
+                        </div>
+                        <div class="col-md-6">
+                          <select id="inputState" class="form-select">
+                            <option selected>Country</option>
+                            <option value="Spain">Spain</option>
+                            <option value="Portugal">Portugal</option>
+                          </select>
+                        </div>
+                          <div class="col-12">
+                          <button type="submit" class="btn btn-primary formulario__submit">Start Free Trial</button>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input formulario__checkinput" type="checkbox" id="gridCheck">
+                            <label class="form-check-label formulario__chequeo" for="gridCheck">
+                                I agree to the <spam class="formulario__textcheck">Master Subscription Agreement.</spam>
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                      <div class="formulario__legal">
+                        <hr class="legal__hr">
+                        <p class="legal__p">By registering, you agree to the processing of your personal data by Salesforce as described in the Privacy Statement.</p>
+                      </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</body>
+</html>
