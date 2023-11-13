@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: Work-sans;
+    src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+:root{
+    --cor-principal:#050B32;
+    --cor-secundaria:#576D99;
+    --cor-terciaria:#0060F0;
+    --fonte-principal: Work-sans;
+}
+
+body{
+    background: url(../assets/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    font-family: var(--fonte-principal);
+}
+
+
+/* Header */
+
+.header{
+    background-color: white;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+.header__login{
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--cor-principal);
+    margin-right: 38px;
+}
+
+.header__signup{
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+    width: 120px;
+    border-radius: 12px;
+    background-color: var(--cor-terciaria);
+    color: white;
+    padding: 11px 34px 11px 32px;
+    font-size: 14px;
+}
+
+/* Formulario */
+
+.main{
+    display: flex;
+    place-content: center;
+    height: 90vh;
+    flex-wrap: wrap;
+}
+
+#formulario{
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid var(--cor-terciaria);
+    padding: 40px;
+    max-width: 550px;
+}
+
+.formulario__img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+}
+
+.formulario__h1{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--cor-principal);
+}
+
+.formulario__p{
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: .9rem;
+    color: var(--cor-secundaria);
+}
+
+.formulario__campo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.formulario__label{
+    font-family: var(--fonte-principal);
+    color: var(--cor-principal);
+    font-size: .8rem;
+}
+
+.formulario__input{
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-secundaria);
+    font-family: var(--fonte-principal);
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.formulario__asterisco{
+    color: red;
+}
+
+.formulario__boton{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__enviar{
+    border-radius: 10px;
+    border: 1px solid var(--cor-terciaria);
+    background-color: white;
+    color: var(--cor-terciaria);
+    font-size: 1rem;
+    padding: 13px 64px;
+    margin-top: 32px;
+}

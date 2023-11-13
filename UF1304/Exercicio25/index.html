@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 25</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <img src="assets/Qargon.png" alt="Logo de Qargon" />
+        </div>
+        <div class="header__botones">
+          <a class="header__login" href="#">Log In</a>
+          <a class="header__signup" href="#">Sign Up</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section id="formulario">
+        <div class="formulario__cabecera">
+          <div class="formulario__img">
+            <img src="assets/Location.png" alt="Imaxe dun icono dun mapa" />
+          </div>
+
+          <h1 class="formulario__h1">Let’s set your account</h1>
+          <p class="formulario__p">Fill this form for complete information</p>
+        </div>
+
+        <form action="contact.php" method="post">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-6 formulario__campo">
+                <label class="formulario__label" for="first_name"
+                  >First name<span class="formulario__asterisco">*</span></label
+                >
+                <input class="formulario__input" type="text" name="first_name" id="first_name" placeholder="Enter first name" />
+              </div>
+
+              <div class="col-md-6 formulario__campo">
+                <label class="formulario__label" for="last_name"
+                  >Last name<span class="formulario__asterisco">*</span></label
+                >
+                <input class="formulario__input" type="text" name="last_name" id="last_name" placeholder="Enter last name"/>
+              </div>
+
+              <div class="col-md-6  formulario__campo">
+                <label class="formulario__label" for="city">City</label>
+                <select class="formulario__input" name="city" id="city">
+                  <option value="">Enter your city</option>
+                  <option value="vigo">Vigo</option>
+                  <option value="coruna">A Coruña</option>
+                </select>
+              </div>
+
+              <div class="col-md-6  formulario__campo">
+                <label class="formulario__label" for="phone">Phone number</label>
+                <input class="formulario__input" type="tel" name="phone" id="phone" placeholder="Enter your phone number"/>
+              </div>
+
+              <div class="col-12 formulario__campo">
+                <label class="formulario__label" for="email"
+                  >Email<span class="formulario__asterisco">*</span></label
+                >
+                <input class="formulario__input" type="email" name="mail" id="mail" placeholder="Enter your email"/>
+              </div>
+
+              <div class="col-12 formulario__boton">
+                <button type="submit" class="formulario__enviar">Submit</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
