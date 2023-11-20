@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 26 - Formulario ESA</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="video-container">
+
+      <header class="header">
+        <div class="header__title">
+          <img src="assets/ESA_Title.svg" alt="European Space Agency"/>
+        </div>
+        <div class="header__logo">
+          <img
+            src="assets/European_Space_Agency_logo.svg.webp"
+            alt="Logo de ESA"
+            width="84px"
+          />
+        </div>
+      </header>
+
+      <video id="video" loop autoplay preload muted poster="assets/tierra.png">
+        <source src="assets/tierra_video.mp4" type="video/mp4">
+        <source src="assets/tierra_video.webm" type="video/webm"/>
+      </video>
+
+      <div class="contenido">
+      <main>
+            <section class="formulario">
+              <div class="container">
+                <div class="row">
+                <div class="formulario__title col-12">
+                    <h1 class="formulario__h1">Formulario de contacto</h1>
+                    <p class="formulario__p">Antes de contactar con nosotros a través de este formulario, por favor
+                      considere revisar nuestro apartado de FAQs para revisar si su pregunta
+                      ha sido respondida ya.</p>
+                </div>
+                <form action="" method="post" class="col-12">
+                  <div class="row">
+                    <div class="formulario__nombre col-md-6">
+                      <label class="formulario__label" for="nombre">Nombre<span class="formulario__asterisco">*</span></label>
+                      <input class="formulario__input" type="text" name="nombre" id="nombre" required>
+                    </div>
+                    <div class="formulario__apellidos col-md-6">
+                      <label class="formulario__label" for="apellidos">Apellidos<span class="formulario__asterisco">*</span></label>
+                      <input class="formulario__input" type="text" name="apellidos" id="apellidos" required>
+                    </div>
+                    <div class="formulario__telefono col-md-6">
+                      <label class="formulario__label" for="telefono">Teléfono<span class="formulario__asterisco">*</span></label>
+                      <input class="formulario__input" type="tel" name="telefono" id="telefono" required>
+                    </div>
+                    <div class="formulario__empresa col-md-6">
+                      <label class="formulario__label" for="empresa">Empresa (opcional)</label>
+                      <input class="formulario__input" type="text" name="empresa" id="empresa">
+                    </div>
+                    <div class="formulario__email col-12">
+                      <label class="formulario__label" for="email">Email<span class="formulario__asterisco">*</span></label>
+                      <input class="formulario__input formulario__correo" type="email" name="email" id="email">
+                    </div>
+                    <div class="formulario__mensaje col-12">
+                      <label class="formulario__label" for="mensaje">Mensaje<span class="formulario__asterisco">*</span></label>
+                      <textarea class="formulario__textarea formulario__input" name="mensaje" id="mensaje">
+                      </textarea>
+                    </div>
+                    <div class="formulario__legal col-12">
+                      <input class="formulario__check" type="checkbox" name="legal" id="legal" required>
+                      <label class="formulario__label" for="legal">Acepto la <a  class="formulario__a" href="#">política de privacidad</a></label>
+                    </div>
+                  </div>
+                  <div class="formulario__enviar">
+                    <button type="submit" id="enviar">ENVIAR</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            </section>
+      </main>
+      <footer>
+        <p class="footer__p">European Space Agency</p>
+      </footer>
+    </div>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
