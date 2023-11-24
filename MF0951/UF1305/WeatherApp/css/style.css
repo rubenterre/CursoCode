@@ -108,6 +108,10 @@ footer{
   justify-content: center;
 }
 
+.footer__a{
+  text-decoration: none;
+}
+
 @media screen and (max-width:768px) {
 
   body{
