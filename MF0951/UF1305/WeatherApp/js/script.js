@@ -162,6 +162,33 @@ fetch(apiURL)
 
            document.getElementById("solpor").innerHTML = horaSolporFormateada;
 
+
+
+           //Cambiar a cor do fondo en función do día ou noite
+
+           function cambiarColorDeFondo() {
+            const agora = new Date();
+          
+            // Determinar a clase de fondo en función da hora do día
+            let claseFondo;
+            if (agora >= dataAmancer && agora < dataSolpor) {
+              // Estamos no día
+              claseFondo = 'fondo-dia';
+            } else {
+              // Estamos na noite
+              claseFondo = 'fondo-noite';
+            }
+          
+            // Eliminar tódaslas clases existentes e engade a clase de fondo actual
+            document.body.className = '';
+            document.body.classList.add(claseFondo);
+          }
+          
+          cambiarColorDeFondo();
+          
+          // Configurar un intervalo para verificar e cambiar a cor de fondo cada minuto
+          setInterval(cambiarColorDeFondo, 60000); // 60000 milisegundos = 1 minuto
+
         }
 
     )

@@ -12,8 +12,15 @@
 body {
   color: white;
   font-family: var(--fonte-principal);
-  background: linear-gradient(125deg, #005bb2 0%, #005bb2 17%, #002e7a 100%);
   height: 100vh;
+}
+
+.fondo-dia{
+  background: linear-gradient(125deg, #005bb2 0%, #005bb2 17%, #002e7a 100%);
+}
+
+.fondo-noite{
+  background: linear-gradient(125deg, #04294b 0%, #1c4164 17%, #011027 100%); 
 }
 
 /* Header */
