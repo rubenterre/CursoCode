@@ -76,6 +76,10 @@ fetch(apiURL)
                 imgURL = 'assets/iconos/04d.png';
             break;
 
+            case '04n':
+                imgURL = 'assets/iconos/04n.png';
+            break;
+
             case '09d':
                 imgURL = 'assets/iconos/09d.png';
             break;
