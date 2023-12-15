@@ -1,0 +1,135 @@
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("../assets/fonts/Poppins-Regular.ttf");
+}
+
+:root {
+  --azul-oscuro: #72b2b2;
+  --azul-claro:#8DC9CC;
+  --laranxa: #efb21b;
+  --laranxa-oscuro:#D3970F;
+  --vermello: #e82c13;
+  --verde-oscuro:#27A738;
+  --verde-claro: #7ebe4c;
+  --gris-oscuro: #6a84a3;
+  --gris-claro:#7F96B8;
+  -negro: #131426;
+  --fonte-prinicpal:Poppins-Regular;
+  font-size: 16px;
+}
+
+/* Estilos xerais */
+
+body {
+  background: url("../assets/img/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.animais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.animais__cabecera {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 369.231px;
+}
+
+.animais__titulo{
+  width: 80%;
+}
+
+.animais__p{
+    font-family: var(--fonte-prinicpal);
+    font-size: 0.8rem;
+}
+
+.animais__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   max-width: 568px;
+}
+
+.animais__card {
+  border-radius: 8px;
+  border: 1px solid var(--azul-oscuro);
+  background: var(--azul-claro);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  width: 118px;
+  height: 114px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.animais__img{
+    width: 76px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+.animais__img:active{
+  transform: scale(0.98);
+}
+
+.animais__card--verde{
+    border: 1px solid var(--verde-oscuro);
+    background: var(--verde-claro);
+}
+
+.animais__card--vermello{
+    border: 1px solid var(--vermello);
+    background: var(--vermello);
+}
+
+.animais__card--laranxa{
+    border: 1px solid var(--laranxa-oscuro);
+    background: var(--laranxa);
+}
+
+.animais__card--gris{
+    border: 1px solid var(--gris-oscuro);
+    background: var(--gris-claro);
+}
+
+.animais__boton{
+    border-radius: 4px;
+    background: #131426;
+    width: 105px;
+    height: 19px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+.animais__boton:active {
+  transform: scale(0.98);
+}

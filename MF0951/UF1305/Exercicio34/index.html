@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 34: Sons de animais</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main>
+       <section class="animais">
+        <div class="animais__cabecera">
+            <img class="animais__titulo" src="./assets/SonsdeAnimais.png" alt="Logo de Sons de animais">
+            <p class="animais__p">Fai clic no botón do animal para escoitar o seu son</p>
+        </div>
+        <div class="animais__cards">
+            <div class="animais__card">
+                <img class="animais__img" src="assets/img/gato.webp" alt="gato" onclick="reproducirSonido('assets/audio/gato.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/gato.mp3')">Gato</button>
+            </div>
+            <div class="animais__card animais__card--verde">
+                <img class="animais__img" src="assets/img/can.webp" alt="can" onclick="reproducirSonido('assets/audio/can.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/can.mp3')">Can</button>
+            </div>
+            <div class="animais__card animais__card--vermello">
+                <img class="animais__img" src="assets/img/leon.webp" alt="león" onclick="reproducirSonido('assets/audio/leon.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/leon.mp3')">León</button>
+            </div>
+            <div class="animais__card animais__card--laranxa">
+                <img class="animais__img" src="assets/img/cabalo.webp" alt="cabalo" onclick="reproducirSonido('assets/audio/cabalo.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/cabalo.mp3')">Cabalo</button>
+            </div>
+            <div class="animais__card animais__card--verde">
+                <img class="animais__img" src="assets/img/vaca.webp" alt="vaca" onclick="reproducirSonido('assets/audio/vaca.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/vaca.mp3')">Vaca</button>
+            </div>
+            <div class="animais__card animais__card--gris">
+                <img class="animais__img" src="assets/img/cabuxa.webp" alt="cabuxa" onclick="reproducirSonido('assets/audio/cabuxa.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/cabuxa.mp3')">Cabuxa</button>
+            </div>
+            <div class="animais__card animais__card--verde">
+                <img class="animais__img" src="assets/img/hipopotamo.webp" alt="hipopotamo" onclick="reproducirSonido('assets/audio/hipopotamo.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/hipopotamo.mp3')">Hipopótamo</button>
+            </div>
+            <div class="animais__card animais__card">
+                <img class="animais__img" src="assets/img/pinguino.webp" alt="pinguino" onclick="reproducirSonido('assets/audio/pinguino.mp3')">
+                <button class="animais__boton" onclick="reproducirSonido('assets/audio/pinguino.mp3')">Pinguino</button>
+            </div>
+        </div>
+
+       </section>
+    </main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
