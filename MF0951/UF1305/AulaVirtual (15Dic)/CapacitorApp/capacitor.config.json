@@ -1,0 +1,11 @@
+{
+  "appId": "com.rubenterre.animaissons",
+  "appName": "AnimaisSons",
+  "bundledWebRuntime": false,
+  "webDir": "www",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
