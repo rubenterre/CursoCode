@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+:root{
+    --purple-heart-50: #f3f2ff;
+--purple-heart-100: #ebe7ff;
+--purple-heart-200: #d9d3ff;
+--purple-heart-300: #bdafff;
+--purple-heart-400: #9d81ff;
+--purple-heart-500: #7f4fff;
+--purple-heart-600: #6f2bfc;
+--purple-heart-700: #6620e9;
+--purple-heart-800: #5114c3;
+--purple-heart-900: #44139f;
+--purple-heart-950: #28096c;
+--fuente-principal: Arial;
+}
+
+body {
+ background: var(--purple-heart-500);
+ color: var(--purple-heart-300);
+ -webkit-font-smoothing: antialiased;
+ padding: 2rem;
+ height: 100vh;
+}
+
+body, input, button {
+ font-size: 10px;
+ font-family: var(--fuente-principal);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos xerais */
+
+.header{
+    padding: 10px 0px;
+}
+
+.header__h1{
+    color: #f3f2ff;
+    text-align: center;
+}
+
+
+
+.comprobador{
+    display: flex;
+    place-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100vh;
+}
+
+.comprobador__h2{
+    color: #ebe7ff;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.comprobador__input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.comprobador__input::placeholder{
+    width: 100%;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.comprobador__botton{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: var(--purple-heart-500);
+    border: 2px solid var(--purple-heart-100);
+    color: var(--purple-heart-100);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.comprobador__botton:hover{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background-color: var(--purple-heart-900);
+    border: 2px solid var(--purple-heart-100);
+    color: var(--purple-heart-100);
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.comprobador__h4{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: var(--purple-heart-200);
+}

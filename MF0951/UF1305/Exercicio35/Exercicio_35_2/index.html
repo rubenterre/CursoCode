@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 35 - Actividade 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__h1">Exercicio 35 - Actividade 2</h1>
+    </header>
+    <main class="comprobador">
+        <section class="comprobador__section">
+            <div class="comprobador__cabecera">
+                <h2 class="comprobador__h2">
+                    Tes idade para votar?
+                </h2>
+                <input class="comprobador__input" type="number" name="idade" id="idade" placeholder="Escribe a túa idade">
+                <button class="comprobador__botton" onclick="eMaiorDeIdade(document.getElementById('idade').value)">Enviar</button>
+            </div>
+            <div class="comprobador__resposta">
+                <h4 id="resultado" class="comprobador__h4">
+                    Non sei se podes votar
+                </h4>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

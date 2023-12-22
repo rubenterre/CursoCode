@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 35 - Actividade 1</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Exercicio 35 - Actividade 1</h1>
+    </header>
+    <main class="calificacion">
+      <div class="calificacion__engadir">
+        
+          <label for="nome">Nome do alumno:</label>
+          <input type="text" name="nome" id="nome" placeholder="Nome do alumno" />
+          <label for="nota">Calificación final:</label>
+          <input
+            type="number"
+            name="nota"
+            id="cualificacion"
+            placeholder="Introduce a nota numérica"
+          />
+          <button onclick="calificacion(document.getElementById('nome').value, document.getElementById('cualificacion').value)" type="button">Enviar</button>
+        </div>
+      <div class="calificacion__resultado">
+        <p class="calificacion__p"></p>
+      </div>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
