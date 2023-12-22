@@ -25,6 +25,7 @@ body {
  background: var(--blue-chill-600);
  color: var(--blue-chill-100);
  -webkit-font-smoothing: antialiased;
+ padding: 10%;
 }
 
 body, input, button {
