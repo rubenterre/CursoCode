@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      display: flex;
+      height: 100vh;
+    }
+
+    #slider-container {
+      display: flex;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      width: 100%;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      height: 100vh;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #slide1 {
+      background-color: #3498db;
+    }
+
+    #slide2 {
+      background-color: #2ecc71;
+    }
+
+    #slide3 {
+      background-color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="slider-container">
+    <div id="slide1" class="slide">
+      <h1>Slide 1</h1>
+      <p>Contido do Slide 1</p>
+    </div>
+    <div id="slide2" class="slide">
+      <h1>Slide 2</h1>
+      <p>Contido do Slide 2</p>
+    </div>
+    <div id="slide3" class="slide">
+      <h1>Slide 3</h1>
+      <p>Contido do Slide 3</p>
+    </div>
+  </div>
+
+</body>
+</html>
