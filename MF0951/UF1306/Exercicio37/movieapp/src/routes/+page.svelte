@@ -12,6 +12,7 @@
     );
     const data = await response.json();
     movies = data.results;
+    searchTerm = " ";
   };
 </script>
 
