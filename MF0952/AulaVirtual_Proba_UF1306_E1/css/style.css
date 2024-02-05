@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../assets/fonts/Nunito-VariableFont_wght.ttf);
+}
+
+:root{
+    --cor-principal: #565458;
+    --fonte-principal: Nunito;
+}
+
+body {
+ background: white;
+ color: var(--cor-principal);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 16px;
+ font-family: var(--fonte-principal);
+}
+
+button {
+ cursor: pointer;
+}
+
+/*/ Estilos Xerais /*/
+
+.header{
+    background: white;
+    height: 80px;
+}
+
+.header__ul{
+    display: flex;
+    place-content: center;
+    list-style: none;
+}
+
+.header__li{
+    margin-top: 60px;
+}
+
+.header__a{
+    color: var(--cor-principal);
+    margin-top: 60px;
+    padding: 60px 10px 0px 0px;
+    text-decoration: none;
+}
+
+/* Cabecera */
+
+.cabecera{
+    margin: 40px 0px;
+}
+
+.cabecera__logo{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera__descripcion{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera__p{
+    width: 586px;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+}
+
+/* Galería */
+
+.galeria__imagenes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* footer */
+
+.footer{
+    height: 80px;
+}
+
+.footer__p{
+    margin: 70px 0px 10px 0px;
+    text-align: center;
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+}
+
+/* Popup */
+
+.popup{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.5);
+    position: fixed;
+    z-index: 40;
+}
+
+.popup__img{
+    position: fixed;
+    background-color: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup__cerrar{
+    background: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    border: 0px;
+    margin: 20px 0px;
+}

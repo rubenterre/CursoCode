@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula virtual: Proba UF1306</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li"><a class="header__a" href="index.html">INICIO</a></li>
+                <li class="header__li"><a class="header__a" href="#">GALERÍA</a></li>
+                <li class="header__li"><a class="header__a" href="#">SERVIZOS</a></li>
+                <li class="header__li"><a class="header__a" href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cabecera">
+            <div class="cabecera__logo">
+                <img class="cabecera__img" src="assets/Mike_logo.webp" alt="Logo de Mike fotografía">
+            </div>
+            <div class="cabecera__descripcion">
+                <p class="cabecera__p">Explora coleccións temáticas coidadosamente curadas que capturan a esencia da natureza, a diversidade cultural e a creatividade humana. Déixate inspirar pola creatividade dos nosos talentosos fotógrafos, quen coas súas habilidades técnicas e sensibilidade artística, transforman momentos fuxidíos en obras mestras eternas.</p>
+            </div>
+        </section>
+        <section class="galeria">
+            <div class="galeria__imagenes">
+                <img onclick="mostrarPopup('bodas')" src="assets/cuadradas/bodas_378px.webp" alt="Imaxe duns noivos na boda">
+                <img onclick="mostrarPopup('comida')" src="assets/cuadradas/comida_378px.webp" alt="Imaxe dun plato dunha dorada cociñada">
+                <img onclick="mostrarPopup('eventos')" src="assets/cuadradas/eventos_378px.webp" alt="Imaxe dunha conferencia con xente levantando a man para intervir">
+                <img onclick="mostrarPopup('interiores')" src="assets/cuadradas/interiores_378px.webp" alt="Imaxe dunha sala de estar">
+                <img onclick="mostrarPopup('naturaleza')" src="assets/cuadradas/naturaleza_378px.webp" alt="Imaxe dunha paisaxe">
+                <img onclick="mostrarPopup('retratos')" src="assets/cuadradas/retratos_378px.webp" alt="Imaxe do retrato dunha muller">
+            </div>
+        </section>
+
+        <div id="popupContenedor"></div>
+        <!-- <div class="popup">
+            <div class="popup__img">
+                <img src="assets/popup/boda_1000px.webp" alt="Foto dunha boda">
+                <button class="popup__cerrar">
+                <p>Cerrar</p>    
+                </button>
+            </div>
+        </div> -->
+
+    </main>
+    <footer class="footer">
+        <p class="footer__p">Todos os dereitos reservados - Mike fotógrafía - 2024</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
