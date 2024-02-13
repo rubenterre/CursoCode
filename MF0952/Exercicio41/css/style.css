@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PTSans-Bold;
+    src: url(../assets/fonts/PTSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: PTSans-Regular;
+    src: url(../assets/fonts/PTSans-Regular.ttf);
+}
+
+:root{
+    --cor-principal: #022E5F;
+    --cor-secundario: #3C8AC0;
+    --fonte-principal: PTSans-Bold;
+    --fonte-secundaria: PTSans-Regular;
+}
+
+body {
+ background: white;
+ color: var(--cor-principal);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 16px ;
+ font-family: var(--fonte-principal) ;
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Estilos xeraais */
+
+.header{
+    background-color: var(--cor-principal);
+    width: 100%;
+}
+
+.header__subnav{
+ background-color: var(--cor-secundario);
+ width: 100%;
+ display: flex;
+ place-content: center;
+ flex-wrap: wrap;
+ align-items: center;
+ height: 31px;
+}
+
+.subnav__a{
+    color: white;
+    font-family: var(--fonte-secundaria);
+    text-decoration: none;
+    padding: 0px 5px;
+}
+
+.subnav__a--active{
+    font-family: var(--fonte-principal);
+}
+
+.header__menu{
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+
+.header__img{
+    padding-right: 37px;
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.header__logo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__li{
+    list-style: none;
+    padding-right: 110px;
+}
+
+.header__a{
+    color: white;
+    font-family: var(--fonte-principal);
+    text-decoration: none;
+}
+
+.header__button{
+    width: 164px;
+    height: 33px;
+    border-radius: 14.5px;
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 0px;
+    background-color: white;
+}
+
+.header__p{
+    font-family: var(--fonte-principal);
+    color: #3C8AC0;
+    font-size: 14px;
+}
+
+.header__btn{
+    margin-left: 14px;
+    width: 18px;
+}
+
+/* main */
+
+.cabecera{
+    width: 100%;
+}
+
+.cabecera__slider{
+    background: url(../assets/foto_02.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 484px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+.cabecera__p{
+    font-family: var(--fonte-secundaria);
+    font-size: 40px;
+    color: white;
+    width: 450px;
+    margin-left: 90px;
+}
+
+.cabecera__axudar{
+    background: white;
+    border-radius: 12px;
+    box-shadow: #000000 0px 2px 20px 0px;
+    height: 226px;
+    margin: 0px 50px;
+    position: relative;
+    z-index: 2;
+    top: 400px;
+}
+
+.cabecera__h2{
+    padding: 23px 43px;
+}
+
+.cabecera__botones{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecera__box{
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecera__img{
+    height: 65px;
+}
+
+.cabecera__h4{
+    font-family: var(--fonte-principal);
+}
+
+/* footer */
+
+.footer{
+    width: 100%;
+    height: 94px;
+    background-color: var(--cor-principal);
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0px 47px;
+}
+
+.footer__ul{
+    display: flex;
+}
+
+.footer__li{
+    color: white;
+    list-style: none;
+}
+
+.footer__a{
+    font-family: var(--fonte-secundaria);
+    color: white;
+    text-decoration: none;
+    margin-right:75px;
+}
+
+.footer__redes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer__p{
+    font-family: var(--fonte-secundaria);
+    color: white;
+}
+
+.footer__img{
+    width: 18px;
+    margin: 0px 10px;
+}
+
+
+
+@media screen and (min-width:1440px) and (max-width:2560px) {
+
+    .cabecera__axudar{
+    margin: 0px auto;
+    width: 1290px;
+    }
+
+    .footer{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    
+    .header__li{
+        padding-right: 30px;
+    }
+
+}
+
+@media screen and (max-width:1331px) {
+    
+    .header__menu{
+        height: 170px;
+    }
+
+    .header__nav{
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__ul{
+        display: flex;
+        margin: 20px 0px;
+    }
+}

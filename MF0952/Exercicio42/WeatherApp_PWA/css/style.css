@@ -1,0 +1,166 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins.ttf);
+}
+
+/* Estilos xerais */
+
+:root {
+  --fonte-principal: Poppins;
+}
+
+body {
+  color: white;
+  font-family: var(--fonte-principal);
+  height: 100vh;
+}
+
+.fondo-dia{
+  background: linear-gradient(125deg, #005bb2 0%, #005bb2 17%, #002e7a 100%);
+}
+
+.fondo-noite{
+  background: linear-gradient(125deg, #04294b 0%, #1c4164 17%, #011027 100%); 
+}
+
+/* Header */
+
+header {
+  padding-top: 10px;
+}
+
+.cabecera__lugar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.cabecera__h2 {
+  padding-left: 10px;
+  margin-bottom: 0px;
+}
+
+.cabecera__p {
+  text-align: center;
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 10px;
+}
+
+.cabecera__icono {
+  display: flex;
+  justify-content: center;
+}
+
+.cabecera__img {
+  max-width: 262px;
+}
+
+.cabecera__temperatura {
+  display: flex;
+  justify-content: center;
+}
+
+.cabecera__h3 {
+  font-family: var(--fonte-principal);
+  font-size: 5rem;
+  color: #ffffff;
+}
+
+/* Menu */
+
+.nav{
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
+
+.nav__button{
+  border: 1px solid grey;
+  border-radius: 12px;
+  width: 200px;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.nav__dropdown-menu{
+  position: fixed;
+  z-index: 99;
+  background:#5d5d5d;
+  padding: 10px;
+  border-radius: 12px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+
+.nav__dropdown-menu li{
+  list-style: none;
+  padding:20px;
+  border-bottom: 1px solid white;
+}
+
+#dropdown-border{
+  border-bottom: 0px solid white;
+}
+
+/* Main */
+
+.tarxeta{
+    border-radius: 16px;
+    background: rgba(255,255,255,0.20);
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.tarxeta__h4{
+    font-family: var(--fonte-principal);
+font-size: .8rem;
+color: #FFFFFF;
+margin-bottom: 0px;
+}
+
+.tarxeta__p{
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+.tarxeta__p--hora{
+    font-family: var(--fonte-principal);
+font-size: 1.3rem;
+color: #FFFFFF;
+margin-bottom: 0px;
+}
+
+
+/* Footer */
+
+footer{
+    padding: 40px 0px;
+    bottom: 0px;
+}
+
+.footer__nav{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__a{
+  text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+
+  body{
+    height: 100%;
+  }
+  
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="gl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <meta name="keywords" content="tempo, clima, metereoloxía, galicia" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HanheldFriendly" content="true" />
+
+    <!-- Meta etiquetas PWA para Apple -->
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link
+      rel="apple-touch-startup-image"
+      href="assets/favicons/favicon_96x96@1x.png"
+    />
+
+    <!-- Configuración General PWA -->
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/favicons/favicon_16x16@1x.png" />
+    <link rel="apple-touch-icon" href="assets/favicons/favicon_32x32@1x.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="48x48"
+      href="assets/favicons/favicon_48x48@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="assets/favicons/favicon_96x96@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="assets/favicons/favicon_152x152@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="assets/favicons/favicon_167x167@1x.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/favicon_180x180@1x.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="assets/favicons/favicon_192x192@1x.png"
+    />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="assets/favicons/favicon_512x512@1x.png"
+    />
+
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="nav__dropdown">
+          <button
+           class="nav__button"
+           onclick="mostrarDropdown()"
+          >
+            Menu
+          </button>
+          <ul id="navMenu" class="nav__dropdown-menu">
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="actualizaTempo(42.88,-8.54) & cerrarDropdown()"
+              >
+                Santiago de Compostela
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="actualizaTempo(42.2328,-8.7226) & cerrarDropdown()"
+              >
+                Vigo
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="actualizaTempo(42.5963,-8.7643) & cerrarDropdown()"
+              >
+                Vilagarcía de Arousa
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="actualizaTempo(43.3713,-8.396) & cerrarDropdown()"
+              >
+                A Coruña
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="actualizaTempo(43,-7.5667) & cerrarDropdown()"
+              >
+                Lugo
+              </button>
+            </li>
+            <li>
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="actualizaTempo(42.3333,-7.85) & cerrarDropdown()"
+              >
+                Ourense
+              </button>
+            </li>
+            <li id="dropdown-border">
+              <button
+                class="dropdown-item"
+                type="button"
+                onclick="actualizaTempo(42.6498,-8.8176) & cerrarDropdown()"
+              >
+                Rianxo
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- <nav class="navbar navbar-dark bg-transparent fixed-top">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Selecciona unha cidade</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" onclick="actualizaTempo(42.88,-8.54)" >Santiago de Compostela</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="actualizaTempo(42.2328,-8.7226)" >Vigo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="actualizaTempo(43.3713,-8.396)" >A Coruña</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="actualizaTempo(42.5963,-8.7643)" >Vilagarcía de Arousa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="actualizaTempo(43,-7.5667)" >Lugo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="actualizaTempo(42.3333,-7.85)" >Ourense</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="actualizaTempo(42.6498,-8.8176)" >Rianxo</a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav class="cabecera">
+        <div class="cabecera__lugar">
+          <img
+            class="cabecera__img"
+            src="assets/location_icon.svg"
+            alt="Icona de localización"
+          />
+          <h2 class="cabecera__h2"></h2>
+        </div>
+        <div class="cabecera__data">
+          <p class="cabecera__p"></p>
+        </div>
+        <div class="cabecera__icono">
+          <img
+            id="cabecera__img"
+            class="cabecera__img"
+            src="assets/Iconos/02n.png"
+            alt="Icona do tempo"
+          />
+        </div>
+        <div class="cabecera__temperatura">
+          <h3 class="cabecera__h3"></h3>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="detalles">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <hr />
+              <div class="tarxeta">
+                <h4 class="tarxeta__h4">Sensación térmica:</h4>
+                <p id="sensacion" class="tarxeta__p"></p>
+              </div>
+              <div class="tarxeta">
+                <h4 class="tarxeta__h4">Temperatura max:</h4>
+                <p id="temp_max" class="tarxeta__p"></p>
+              </div>
+              <div class="tarxeta">
+                <h4 class="tarxeta__h4">Temperatura min:</h4>
+                <p id="temp_min" class="tarxeta__p"></p>
+              </div>
+            </div>
+            <div class="col">
+              <hr />
+              <div class="tarxeta">
+                <h4 class="tarxeta__h4">Visibilidade:</h4>
+                <p id="visibilidade" class="tarxeta__p"></p>
+              </div>
+              <div class="tarxeta">
+                <h4 class="tarxeta__h4">Humidade:</h4>
+                <p id="humidade" class="tarxeta__p"></p>
+              </div>
+              <div class="tarxeta">
+                <h4 class="tarxeta__h4">Vento:</h4>
+                <p id="vento" class="tarxeta__p"></p>
+              </div>
+            </div>
+            <div class="col">
+              <hr />
+              <div class="tarxeta tarxeta--hora">
+                <img class="tarxeta__img" src="assets/sun.svg" alt="Amancer" />
+                <p id="amancer" class="tarxeta__p--hora"></p>
+              </div>
+              <div class="tarxeta tarxeta--hora">
+                <img
+                  class="tarxeta__img"
+                  src="assets/sun-fog.svg"
+                  alt="Solpor"
+                />
+                <p id="solpor" class="tarxeta__p--hora"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="text-center">
+      <a class="link-light footer__a" href="#"
+        >Tempo App - Tódolos dereitos reservados - 2023</a
+      >
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
