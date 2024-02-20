@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Monotype;
+    src: url(/assets/fonts/monotype-corsiva.ttf);
+}
+
+:root{
+    --cor-principal: #C19D56;
+    --cor-secundario:#ffffffbf;
+    --cor-terciario:#4D4D4D;
+    --font-principal: Montserrat;
+    --font-secundaria:Monotype;
+}
+
+body {
+ background: white;
+ color: var(--cor-terciario);
+ -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+ font-size: 16px;
+ font-family: var(--font-principal);
+}
+
+button {
+ cursor: pointer;
+}
+
+/* Header */
+
+.header{
+    background: url(/assets/piedras-de-santiago-tradicion-ciudad.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    padding: 16px 16px;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: 150px;
+}
+
+.header__ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.header__a{
+    text-decoration: none;
+    color: white;
+    padding: 0px 16px;
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.header__a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+/* Footer */
+
+.footer{
+    height: 99px;
+    background: black;
+    display: flex;
+    align-items: center;
+}
+
+.footer__p{
+    font-family: var(--font-principal);
+    font-size: 16px;
+    color: var(--cor-principal);
+    padding: 0px 16px;
+}
+
+.portada{
+    width: 700px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.portada__titular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portada__p{
+    font-family: var(--font-secundaria);
+    font-size: 48px;
+    color: var(--cor-principal);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.portada__button{
+    background: var(--cor-principal);
+    color: var(--cor-secundario);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    width: 168px;
+    height: 46px;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+/* Main */
+
+.main{
+    height: 900px;
+}
+
+.cards__contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards{
+    padding-top: 110px;
+}
+
+.cards__card{
+    width: 301px;
+    height: 379px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(/assets/components/intro-sobre-nosotros.webp);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 15px 3px rgba(0, 0, 0, 0.5);
+}
+
+.cards__card--elaboracion{
+    background: url(/assets/components/intro-elaboracion.webp);
+}
+
+.cards__card--empresas{
+    background: url(/assets/components/intro-para-empresas.webp);
+}
+
+.cards__card--eventos{
+    background: url(/assets/components/intro-eventos.webp);
+}
+
+.cards__img{
+    width: 90px;
+    margin-bottom: 33px;
+}
+
+.cards__h4{
+    color: white;
+    font-family: var(--font-secundaria);
+    font-size: 26px;
+}

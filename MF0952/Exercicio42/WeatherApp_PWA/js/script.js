@@ -1,13 +1,15 @@
+const apiKey = ENV.API_KEY;
+
 // API de Openweathermaps
 
 let lat = 42.88;
 
 let lon = -8.54;
 
+
 function actualizaTempo(lat,lon){
 
-const apiKey = "a83cd5db22f6b778c1c4c67eef3578bb";
-
+// const apiKey = "a83cd5db22f6b778c1c4c67eef3578bb";
 const units = "metric";
 
 const apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=${units}`;
