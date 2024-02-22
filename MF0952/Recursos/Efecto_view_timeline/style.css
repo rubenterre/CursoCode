@@ -1,0 +1,14 @@
+
+svg{
+    view-timeline-name: --twitch;
+    view-timeline-axis: block;
+
+    animation-timeline: --twitch;
+    animation-name: show;
+}
+
+  @keyframes show {
+    to {
+        color: white;
+    }
+  }
